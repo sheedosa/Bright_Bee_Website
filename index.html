@@ -43,10 +43,14 @@
 <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
 
-<!-- Fonts -->
+<!-- Preload LCP hero image -->
+<link rel="preload" as="image" href="assets/hero.jpg" fetchpriority="high">
+
+<!-- Fonts (loaded non-render-blocking) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"></noscript>
 
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -258,7 +262,7 @@
 
   <!-- ===================== HERO ===================== -->
   <section id="top" class="hero" style="position: relative; min-height: clamp(580px, 86vh, 780px); display: flex; align-items: center; padding: 140px 24px 72px; overflow: hidden;">
-    <img class="hero-bg" src="assets/hero.jpg" alt="" fetchpriority="high" decoding="async" style="position: absolute; inset: 0; z-index: 0;">
+    <img class="hero-bg" src="assets/hero.jpg" alt="" width="1280" height="715" fetchpriority="high" decoding="async" style="position: absolute; inset: 0; z-index: 0;">
     <div style="position: absolute; inset: 0; z-index: 1; background: linear-gradient(102deg, rgba(22,41,66,0.93) 0%, rgba(24,38,58,0.86) 34%, rgba(31,33,35,0.55) 62%, rgba(31,33,35,0.18) 84%, rgba(31,33,35,0.05) 100%);"></div>
     <div style="position: absolute; inset: 0; z-index: 1; background: linear-gradient(0deg, rgba(20,30,46,0.55) 0%, rgba(20,30,46,0) 38%);"></div>
     <div style="position: relative; z-index: 2; width: 100%; max-width: 1180px; margin: 0 auto;">
@@ -623,11 +627,16 @@
 
 <script>
   (function () {
-    // Header shrink on scroll
+    // Header shrink on scroll — only touches the DOM when crossing the
+    // threshold, so there is no per-frame style write during scrolling.
     var header = document.getElementById('siteHeader');
+    var isScrolled = null;
     function onScroll() {
       if (!header) return;
-      if (window.scrollY > 24) {
+      var s = window.scrollY > 24;
+      if (s === isScrolled) return;           // no state change → skip DOM write
+      isScrolled = s;
+      if (s) {
         header.style.padding = '10px 24px';
         header.style.boxShadow = '0 6px 24px rgba(31,33,35,0.1)';
         header.style.background = 'rgba(251,250,247,0.96)';
