@@ -88,6 +88,9 @@
   /* Header object-fit for hero image */
   .hero-bg { width: 100%; height: 100%; object-fit: cover; }
 
+  /* Mobile-only shorter hero lede (hidden on desktop) */
+  .hero-lede-sm { display: none; }
+
   /* Swipeable card carousels on mobile */
   @media (max-width: 880px) {
     .card-grid {
@@ -117,6 +120,18 @@
     [data-desktop-nav] { display: none !important; }
     [data-phone-link] { display: none !important; }
     [data-mobile-toggle] { display: inline-flex !important; }
+
+    /* Decluttered, fit-to-screen hero on mobile */
+    .hero { padding: 104px 22px 44px !important; min-height: auto !important; }
+    .hero-badges { gap: 6px 10px !important; margin-bottom: 16px !important; }
+    .hero-badge { font-size: 11px !important; }
+    .hero-badge--hide-sm { display: none !important; }
+    .hero-title { font-size: 27px !important; margin-bottom: 14px !important; }
+    .hero-lede { display: none !important; }
+    .hero-lede-sm { display: block !important; font-size: 15px !important; line-height: 1.55; max-width: 600px; margin-bottom: 22px !important; }
+    .hero-actions { gap: 10px !important; }
+    .hero-actions > a { width: 100%; justify-content: center; padding: 15px 20px !important; font-size: 16px !important; }
+    .hero-microcopy { display: none !important; }
   }
   @keyframes bb-pulse { 0% { box-shadow: 0 0 0 0 rgba(37,211,102,0.45); } 70% { box-shadow: 0 0 0 16px rgba(37,211,102,0); } 100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); } }
 </style>
@@ -242,21 +257,22 @@
   </div>
 
   <!-- ===================== HERO ===================== -->
-  <section id="top" style="position: relative; min-height: clamp(580px, 86vh, 780px); display: flex; align-items: center; padding: 140px 24px 72px; overflow: hidden;">
+  <section id="top" class="hero" style="position: relative; min-height: clamp(580px, 86vh, 780px); display: flex; align-items: center; padding: 140px 24px 72px; overflow: hidden;">
     <img class="hero-bg" src="assets/hero.jpg" alt="" fetchpriority="high" decoding="async" style="position: absolute; inset: 0; z-index: 0;">
     <div style="position: absolute; inset: 0; z-index: 1; background: linear-gradient(102deg, rgba(22,41,66,0.93) 0%, rgba(24,38,58,0.86) 34%, rgba(31,33,35,0.55) 62%, rgba(31,33,35,0.18) 84%, rgba(31,33,35,0.05) 100%);"></div>
     <div style="position: absolute; inset: 0; z-index: 1; background: linear-gradient(0deg, rgba(20,30,46,0.55) 0%, rgba(20,30,46,0) 38%);"></div>
     <div style="position: relative; z-index: 2; width: 100%; max-width: 1180px; margin: 0 auto;">
       <div style="max-width: 720px;">
-        <div style="display: inline-flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin-bottom: 26px;">
-          <span style="display: inline-flex; align-items: center; gap: 7px; color: #FBE6B5; font-weight: 700; font-size: 12.5px; letter-spacing: 0.06em; text-transform: uppercase;"><span style="width: 6px; height: 6px; background: #F4A81E; border-radius: 1px; transform: rotate(45deg);"></span>Fully Insured</span>
-          <span style="display: inline-flex; align-items: center; gap: 7px; color: #FBE6B5; font-weight: 700; font-size: 12.5px; letter-spacing: 0.06em; text-transform: uppercase;"><span style="width: 6px; height: 6px; background: #F4A81E; border-radius: 1px; transform: rotate(45deg);"></span>Uniformed &amp; Vetted Staff</span>
-          <span style="display: inline-flex; align-items: center; gap: 7px; color: #FBE6B5; font-weight: 700; font-size: 12.5px; letter-spacing: 0.06em; text-transform: uppercase;"><span style="width: 6px; height: 6px; background: #F4A81E; border-radius: 1px; transform: rotate(45deg);"></span>Same-Day Response</span>
-          <span style="display: inline-flex; align-items: center; gap: 7px; color: #FBE6B5; font-weight: 700; font-size: 12.5px; letter-spacing: 0.06em; text-transform: uppercase;"><span style="width: 6px; height: 6px; background: #F4A81E; border-radius: 1px; transform: rotate(45deg);"></span>North West England</span>
+        <div class="hero-badges" style="display: inline-flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin-bottom: 26px;">
+          <span class="hero-badge" style="display: inline-flex; align-items: center; gap: 7px; color: #FBE6B5; font-weight: 700; font-size: 12.5px; letter-spacing: 0.06em; text-transform: uppercase;"><span style="width: 6px; height: 6px; background: #F4A81E; border-radius: 1px; transform: rotate(45deg);"></span>Fully Insured</span>
+          <span class="hero-badge hero-badge--hide-sm" style="display: inline-flex; align-items: center; gap: 7px; color: #FBE6B5; font-weight: 700; font-size: 12.5px; letter-spacing: 0.06em; text-transform: uppercase;"><span style="width: 6px; height: 6px; background: #F4A81E; border-radius: 1px; transform: rotate(45deg);"></span>Uniformed &amp; Vetted Staff</span>
+          <span class="hero-badge" style="display: inline-flex; align-items: center; gap: 7px; color: #FBE6B5; font-weight: 700; font-size: 12.5px; letter-spacing: 0.06em; text-transform: uppercase;"><span style="width: 6px; height: 6px; background: #F4A81E; border-radius: 1px; transform: rotate(45deg);"></span>Same-Day Response</span>
+          <span class="hero-badge" style="display: inline-flex; align-items: center; gap: 7px; color: #FBE6B5; font-weight: 700; font-size: 12.5px; letter-spacing: 0.06em; text-transform: uppercase;"><span style="width: 6px; height: 6px; background: #F4A81E; border-radius: 1px; transform: rotate(45deg);"></span>North West England</span>
         </div>
-        <h1 style="color: #FFFFFF; font-size: clamp(33px, 5.4vw, 58px); font-weight: 800; line-height: 1.04; letter-spacing: -0.025em; text-wrap: balance; margin-bottom: 22px;">Reliable, Professional Cleaning for Property Managers Across the North West</h1>
-        <p style="color: rgba(255,255,255,0.82); font-size: clamp(16px, 1.7vw, 19px); line-height: 1.6; max-width: 600px; margin-bottom: 34px;">Bright Bee Cleaning is the dependable cleaning partner for landlords, housing providers, and serviced accommodation operators in Manchester and beyond — with same-day response and a dedicated account manager for every business client.</p>
-        <div style="display: flex; flex-wrap: wrap; gap: 14px;">
+        <h1 class="hero-title" style="color: #FFFFFF; font-size: clamp(33px, 5.4vw, 58px); font-weight: 800; line-height: 1.04; letter-spacing: -0.025em; text-wrap: balance; margin-bottom: 22px;">Reliable, Professional Cleaning for Property Managers Across the North West</h1>
+        <p class="hero-lede" style="color: rgba(255,255,255,0.82); font-size: clamp(16px, 1.7vw, 19px); line-height: 1.6; max-width: 600px; margin-bottom: 34px;">Bright Bee Cleaning is the dependable cleaning partner for landlords, housing providers, and serviced accommodation operators in Manchester and beyond — with same-day response and a dedicated account manager for every business client.</p>
+        <p class="hero-lede-sm" style="color: rgba(255,255,255,0.82); margin-bottom: 22px;">Dependable, fully-insured cleaning for property managers &amp; landlords across Manchester and the North West.</p>
+        <div class="hero-actions" style="display: flex; flex-wrap: wrap; gap: 14px;">
           <a class="btn-gold" href="tel:+447448946475" style="display: inline-flex; align-items: center; gap: 11px; padding: 17px 28px; background: #F4A81E; color: #1F2123; font-weight: 800; font-size: 17px; border-radius: 14px; text-decoration: none; box-shadow: 0 10px 26px rgba(244,168,30,0.4);">
             <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             Call 07448 946475
@@ -266,7 +282,7 @@
             Message us on WhatsApp
           </a>
         </div>
-        <p style="color: rgba(255,255,255,0.66); font-size: 14.5px; font-weight: 500; margin-top: 20px;">Same-day response · Speak to a real person, not a call centre</p>
+        <p class="hero-microcopy" style="color: rgba(255,255,255,0.66); font-size: 14.5px; font-weight: 500; margin-top: 20px;">Same-day response · Speak to a real person, not a call centre</p>
       </div>
     </div>
   </section>
