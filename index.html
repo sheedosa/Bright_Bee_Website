@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Primary SEO -->
+<title>Bright Bee Cleaning | Property & Communal Cleaning across Manchester & the North West</title>
+<meta name="description" content="Bright Bee Cleaning is the dependable cleaning partner for property managers, landlords, and serviced accommodation operators across Manchester & the North West. Fully insured, same-day response, dedicated account manager.">
+<meta name="theme-color" content="#1F2123">
+<link rel="canonical" href="https://sheedosa.github.io/Bright_Bee_Website/">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bright Bee Cleaning">
+<meta property="og:title" content="Bright Bee Cleaning | Property Cleaning across Manchester & the North West">
+<meta property="og:description" content="Reliable, fully-insured cleaning for property managers, landlords & serviced accommodation. Same-day response. Dedicated account manager.">
+<meta property="og:url" content="https://sheedosa.github.io/Bright_Bee_Website/">
+<meta property="og:image" content="https://sheedosa.github.io/Bright_Bee_Website/assets/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bright Bee Cleaning | Property Cleaning across Manchester & the North West">
+<meta name="twitter:description" content="Reliable, fully-insured cleaning for property managers, landlords & serviced accommodation. Same-day response.">
+<meta name="twitter:image" content="https://sheedosa.github.io/Bright_Bee_Website/assets/og-image.jpg">
+
+<!-- Icons -->
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 96px; -webkit-text-size-adjust: 100%; }
+  body { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: #1F2123; background: #FBFAF7; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; }
+  img { max-width: 100%; }
+
+  /* Accessibility: visible keyboard focus */
+  a:focus-visible, button:focus-visible { outline: 3px solid #1E5FAE; outline-offset: 3px; border-radius: 8px; }
+  .skip-link { position: absolute; left: -9999px; top: 0; z-index: 300; background: #1F2123; color: #fff; padding: 12px 18px; border-radius: 0 0 10px 0; font-weight: 700; }
+  .skip-link:focus { left: 0; }
+
+  /* Reveal-on-scroll */
+  [data-reveal] { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+  [data-reveal].is-visible { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    [data-reveal] { opacity: 1 !important; transform: none !important; transition: none; }
+    .fab-wa { animation: none !important; }
+  }
+
+  /* Hover states (replace prototype style-hover) */
+  .btn-gold { transition: background .18s ease, transform .18s ease; }
+  .btn-gold:hover { background: #D98A0A !important; transform: translateY(-2px); }
+  .btn-wa { transition: background .18s ease, transform .18s ease; }
+  .btn-wa:hover { background: #1EBE5A !important; transform: translateY(-2px); }
+  .btn-wa-outline { transition: background .18s ease, transform .18s ease; }
+  .btn-wa-outline:hover { background: #F0FBF4 !important; transform: translateY(-2px); }
+  .btn-navy { transition: background .18s ease, transform .18s ease; }
+  .btn-navy:hover { background: #16487F !important; transform: translateY(-2px); }
+  .why-card { transition: box-shadow .2s ease, border-color .2s ease, transform .2s ease; }
+  .why-card:hover { box-shadow: 0 18px 40px rgba(31,33,35,0.09); border-color: #F4D38A; transform: translateY(-4px); }
+  .svc-card { transition: box-shadow .2s ease, background .2s ease; }
+  .svc-card:hover { box-shadow: 0 16px 36px rgba(31,33,35,0.08); background: #FFFFFF; }
+  .fab-wa { transition: transform .18s ease; }
+  .fab-wa:hover { transform: scale(1.06); }
+
+  /* Header object-fit for hero image */
+  .hero-bg { width: 100%; height: 100%; object-fit: cover; }
+
+  @media (max-width: 880px) {
+    [data-desktop-nav] { display: none !important; }
+    [data-phone-link] { display: none !important; }
+    [data-mobile-toggle] { display: inline-flex !important; }
+  }
+  @keyframes bb-pulse { 0% { box-shadow: 0 0 0 0 rgba(37,211,102,0.45); } 70% { box-shadow: 0 0 0 16px rgba(37,211,102,0); } 100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); } }
+</style>
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CleaningService",
+  "name": "Bright Bee Cleaning",
+  "description": "Professional property and communal cleaning for property managers, landlords, housing providers and serviced accommodation operators across Manchester and the North West of England.",
+  "url": "https://sheedosa.github.io/Bright_Bee_Website/",
+  "telephone": "+447448946475",
+  "email": "info@brightbeecleaningltd.co.uk",
+  "image": "https://sheedosa.github.io/Bright_Bee_Website/assets/og-image.jpg",
+  "areaServed": ["Manchester","Salford","Stockport","Trafford","Bolton","Bury","Oldham","Rochdale","Wigan","Tameside","North West England"],
+  "address": { "@type": "PostalAddress", "addressRegion": "North West England", "addressCountry": "GB" },
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Communal Area Cleaning" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "End-of-Tenancy Cleaning" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "HMO Cleaning" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Serviced Accommodation Turnarounds" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Deep Cleaning" } }
+  ]
+}
+</script>
+</head>
+<body>
+<a href="#services" class="skip-link">Skip to content</a>
+
+<div style="background: #FBFAF7; overflow-x: hidden;">
+
+  <!-- ===================== HEADER ===================== -->
+  <header id="siteHeader" style="position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 18px 24px; background: rgba(251,250,247,0.86); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: 0 1px 0 rgba(31,33,35,0.06); transition: padding .25s ease, box-shadow .25s ease, background .25s ease;">
+    <a href="#top" style="display: flex; align-items: center; text-decoration: none; flex-shrink: 0;">
+      <img src="assets/brightbee-logo-cropped.png" alt="Bright Bee Cleaning" width="135" height="46" style="height: 46px; width: auto; display: block;">
+    </a>
+    <nav data-desktop-nav aria-label="Primary" style="display: flex; align-items: center; gap: 30px;">
+      <a href="#services" style="text-decoration: none; color: #1F2123; font-weight: 600; font-size: 15px; letter-spacing: -0.01em;">Services</a>
+      <a href="#why" style="text-decoration: none; color: #1F2123; font-weight: 600; font-size: 15px; letter-spacing: -0.01em;">Why Us</a>
+      <a href="#property-managers" style="text-decoration: none; color: #1F2123; font-weight: 600; font-size: 15px; letter-spacing: -0.01em;">For Property Managers</a>
+      <a href="#areas" style="text-decoration: none; color: #1F2123; font-weight: 600; font-size: 15px; letter-spacing: -0.01em;">Areas</a>
+      <a href="#contact" style="text-decoration: none; color: #1F2123; font-weight: 600; font-size: 15px; letter-spacing: -0.01em;">Contact</a>
+    </nav>
+    <div style="display: flex; align-items: center; gap: 14px; flex-shrink: 0;">
+      <a data-phone-link href="tel:+447448946475" style="text-decoration: none; color: #16487F; font-weight: 700; font-size: 15px; white-space: nowrap;">07448 946475</a>
+      <a class="btn-gold" href="tel:+447448946475" style="display: inline-flex; align-items: center; gap: 8px; padding: 11px 18px; background: #F4A81E; color: #1F2123; font-weight: 800; font-size: 14.5px; border-radius: 12px; text-decoration: none; white-space: nowrap; box-shadow: 0 6px 16px rgba(244,168,30,0.32);">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call Now
+      </a>
+      <button id="menuToggle" data-mobile-toggle aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu" style="display: none; align-items: center; justify-content: center; width: 44px; height: 44px; border: 1px solid #ECE8E1; background: #FFFFFF; border-radius: 12px; cursor: pointer; color: #1F2123;">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile menu panel -->
+  <div id="mobileMenu" hidden style="position: fixed; top: 80px; left: 12px; right: 12px; z-index: 99; background: #FFFFFF; border: 1px solid #ECE8E1; border-radius: 16px; box-shadow: 0 18px 50px rgba(31,33,35,0.16); padding: 12px; flex-direction: column;">
+    <a href="#services" data-close-menu style="text-decoration: none; color: #1F2123; font-weight: 600; font-size: 16px; padding: 14px 14px; border-radius: 10px;">Services</a>
+    <a href="#why" data-close-menu style="text-decoration: none; color: #1F2123; font-weight: 600; font-size: 16px; padding: 14px 14px; border-radius: 10px;">Why Us</a>
+    <a href="#property-managers" data-close-menu style="text-decoration: none; color: #1F2123; font-weight: 600; font-size: 16px; padding: 14px 14px; border-radius: 10px;">For Property Managers</a>
+    <a href="#areas" data-close-menu style="text-decoration: none; color: #1F2123; font-weight: 600; font-size: 16px; padding: 14px 14px; border-radius: 10px;">Areas</a>
+    <a href="#contact" data-close-menu style="text-decoration: none; color: #1F2123; font-weight: 600; font-size: 16px; padding: 14px 14px; border-radius: 10px;">Contact</a>
+    <div style="display: flex; gap: 10px; padding: 8px 6px 6px;">
+      <a href="tel:+447448946475" style="flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 14px; background: #F4A81E; color: #1F2123; font-weight: 800; border-radius: 12px; text-decoration: none;">Call</a>
+      <a href="https://wa.me/447448946475" style="flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 14px; background: #25D366; color: #FFFFFF; font-weight: 800; border-radius: 12px; text-decoration: none;">WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="top" style="position: relative; min-height: clamp(580px, 86vh, 780px); display: flex; align-items: center; padding: 140px 24px 72px; overflow: hidden;">
+    <img class="hero-bg" src="assets/hero.jpg" alt="" fetchpriority="high" decoding="async" style="position: absolute; inset: 0; z-index: 0;">
+    <div style="position: absolute; inset: 0; z-index: 1; background: linear-gradient(102deg, rgba(22,41,66,0.93) 0%, rgba(24,38,58,0.86) 34%, rgba(31,33,35,0.55) 62%, rgba(31,33,35,0.18) 84%, rgba(31,33,35,0.05) 100%);"></div>
+    <div style="position: absolute; inset: 0; z-index: 1; background: linear-gradient(0deg, rgba(20,30,46,0.55) 0%, rgba(20,30,46,0) 38%);"></div>
+    <div style="position: relative; z-index: 2; width: 100%; max-width: 1180px; margin: 0 auto;">
+      <div style="max-width: 720px;">
+        <div style="display: inline-flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin-bottom: 26px;">
+          <span style="display: inline-flex; align-items: center; gap: 7px; color: #FBE6B5; font-weight: 700; font-size: 12.5px; letter-spacing: 0.06em; text-transform: uppercase;"><span style="width: 6px; height: 6px; background: #F4A81E; border-radius: 1px; transform: rotate(45deg);"></span>Fully Insured</span>
+          <span style="display: inline-flex; align-items: center; gap: 7px; color: #FBE6B5; font-weight: 700; font-size: 12.5px; letter-spacing: 0.06em; text-transform: uppercase;"><span style="width: 6px; height: 6px; background: #F4A81E; border-radius: 1px; transform: rotate(45deg);"></span>Uniformed &amp; Vetted Staff</span>
+          <span style="display: inline-flex; align-items: center; gap: 7px; color: #FBE6B5; font-weight: 700; font-size: 12.5px; letter-spacing: 0.06em; text-transform: uppercase;"><span style="width: 6px; height: 6px; background: #F4A81E; border-radius: 1px; transform: rotate(45deg);"></span>Same-Day Response</span>
+          <span style="display: inline-flex; align-items: center; gap: 7px; color: #FBE6B5; font-weight: 700; font-size: 12.5px; letter-spacing: 0.06em; text-transform: uppercase;"><span style="width: 6px; height: 6px; background: #F4A81E; border-radius: 1px; transform: rotate(45deg);"></span>North West England</span>
+        </div>
+        <h1 style="color: #FFFFFF; font-size: clamp(33px, 5.4vw, 58px); font-weight: 800; line-height: 1.04; letter-spacing: -0.025em; text-wrap: balance; margin-bottom: 22px;">Reliable, Professional Cleaning for Property Managers Across the North West</h1>
+        <p style="color: rgba(255,255,255,0.82); font-size: clamp(16px, 1.7vw, 19px); line-height: 1.6; max-width: 600px; margin-bottom: 34px;">Bright Bee Cleaning is the dependable cleaning partner for landlords, housing providers, and serviced accommodation operators in Manchester and beyond — with same-day response and a dedicated account manager for every business client.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 14px;">
+          <a class="btn-gold" href="tel:+447448946475" style="display: inline-flex; align-items: center; gap: 11px; padding: 17px 28px; background: #F4A81E; color: #1F2123; font-weight: 800; font-size: 17px; border-radius: 14px; text-decoration: none; box-shadow: 0 10px 26px rgba(244,168,30,0.4);">
+            <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call 07448 946475
+          </a>
+          <a class="btn-wa" href="https://wa.me/447448946475" style="display: inline-flex; align-items: center; gap: 11px; padding: 17px 26px; background: #25D366; color: #FFFFFF; font-weight: 800; font-size: 17px; border-radius: 14px; text-decoration: none; box-shadow: 0 10px 26px rgba(37,211,102,0.32);">
+            <svg viewBox="0 0 32 32" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M16 .4C7.4.4.5 7.3.5 15.9c0 2.8.7 5.5 2.1 7.9L.4 31.6l8-2.1c2.3 1.3 4.9 1.9 7.6 1.9 8.6 0 15.5-6.9 15.5-15.5S24.6.4 16 .4zm0 28.3c-2.4 0-4.7-.6-6.7-1.8l-.5-.3-4.8 1.3 1.3-4.6-.3-.5c-1.3-2.1-2-4.5-2-7 0-7.2 5.9-13.1 13.1-13.1 3.5 0 6.8 1.4 9.3 3.8 2.5 2.5 3.8 5.8 3.8 9.3 0 7.2-5.9 13.2-13.2 13.2zm7.2-9.8c-.4-.2-2.3-1.1-2.7-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.2 1.5-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.3-2.1-2.6-.2-.4 0-.6.2-.7.2-.2.4-.4.5-.6.2-.2.2-.4.4-.6.1-.2.1-.5 0-.7-.1-.2-.9-2.2-1.3-3-.3-.8-.7-.7-.9-.7h-.8c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.2s1.4 3.7 1.5 3.9c.2.2 2.7 4.2 6.6 5.9.9.4 1.6.6 2.2.8.9.3 1.7.2 2.4.1.7-.1 2.3-.9 2.6-1.8.3-.9.3-1.7.2-1.8-.1-.2-.3-.3-.7-.4z"/></svg>
+            Message us on WhatsApp
+          </a>
+        </div>
+        <p style="color: rgba(255,255,255,0.66); font-size: 14.5px; font-weight: 500; margin-top: 20px;">Same-day response · Speak to a real person, not a call centre</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== AUDIENCE STRIP ===================== -->
+  <section style="background: #FFFFFF; border-top: 1px solid #ECE8E1; border-bottom: 1px solid #ECE8E1; padding: 26px 24px;">
+    <div style="max-width: 1180px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px 14px;">
+      <span style="color: #5A5F66; font-weight: 700; font-size: 13px; letter-spacing: 0.04em; text-transform: uppercase; margin-right: 4px;">Trusted by</span>
+      <span style="display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px; background: #FBFAF7; border: 1px solid #ECE8E1; border-radius: 999px; color: #1F2123; font-weight: 700; font-size: 14px;"><span style="width: 7px; height: 7px; background: #F4A81E; transform: rotate(45deg);"></span>Property Managers</span>
+      <span style="display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px; background: #FBFAF7; border: 1px solid #ECE8E1; border-radius: 999px; color: #1F2123; font-weight: 700; font-size: 14px;"><span style="width: 7px; height: 7px; background: #1E5FAE; transform: rotate(45deg);"></span>Landlords</span>
+      <span style="display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px; background: #FBFAF7; border: 1px solid #ECE8E1; border-radius: 999px; color: #1F2123; font-weight: 700; font-size: 14px;"><span style="width: 7px; height: 7px; background: #F4A81E; transform: rotate(45deg);"></span>Housing Providers</span>
+      <span style="display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px; background: #FBFAF7; border: 1px solid #ECE8E1; border-radius: 999px; color: #1F2123; font-weight: 700; font-size: 14px;"><span style="width: 7px; height: 7px; background: #1E5FAE; transform: rotate(45deg);"></span>Letting Agents</span>
+      <span style="display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px; background: #FBFAF7; border: 1px solid #ECE8E1; border-radius: 999px; color: #1F2123; font-weight: 700; font-size: 14px;"><span style="width: 7px; height: 7px; background: #F4A81E; transform: rotate(45deg);"></span>Serviced Accommodation</span>
+    </div>
+  </section>
+
+  <!-- ===================== WHY BRIGHT BEE ===================== -->
+  <section id="why" style="padding: clamp(64px, 8vw, 104px) 24px;">
+    <div style="max-width: 1180px; margin: 0 auto;">
+      <div data-reveal style="text-align: center; max-width: 720px; margin: 0 auto 52px;">
+        <div style="display: inline-flex; align-items: center; gap: 8px; color: #C77F0A; font-weight: 800; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 16px;"><span style="width: 8px; height: 8px; background: #F4A81E; transform: rotate(45deg);"></span>Why Bright Bee</div>
+        <h2 style="font-size: clamp(28px, 4vw, 44px); font-weight: 800; line-height: 1.08; letter-spacing: -0.025em; color: #1F2123; text-wrap: balance; margin-bottom: 16px;">A Cleaning Partner You Don't Have to Manage</h2>
+        <p style="font-size: clamp(16px, 1.7vw, 19px); color: #5A5F66; line-height: 1.6;">When you hand us a property, it gets done — properly, on time, every time.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 20px;">
+
+        <div data-reveal class="why-card" style="background: #FFFFFF; border: 1px solid #ECE8E1; border-radius: 16px; padding: 30px; box-shadow: 0 1px 2px rgba(31,33,35,0.04);">
+          <div style="width: 56px; height: 56px; display: flex; align-items: center; justify-content: center; background: #FDF3DD; clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%); margin-bottom: 20px; color: #C77F0A;">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <h3 style="font-size: 19px; font-weight: 800; color: #1F2123; letter-spacing: -0.01em; margin-bottom: 8px;">Fully Insured</h3>
+          <p style="font-size: 15.5px; color: #5A5F66; line-height: 1.6;">Public Liability cover protecting your properties, tenants, and you.</p>
+        </div>
+
+        <div data-reveal class="why-card" style="background: #FFFFFF; border: 1px solid #ECE8E1; border-radius: 16px; padding: 30px; box-shadow: 0 1px 2px rgba(31,33,35,0.04);">
+          <div style="width: 56px; height: 56px; display: flex; align-items: center; justify-content: center; background: #FDF3DD; clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%); margin-bottom: 20px; color: #C77F0A;">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4.5 13.5H11l-1 8.5L19.5 10.5H13z"/></svg>
+          </div>
+          <h3 style="font-size: 19px; font-weight: 800; color: #1F2123; letter-spacing: -0.01em; margin-bottom: 8px;">Same-Day Response</h3>
+          <p style="font-size: 15.5px; color: #5A5F66; line-height: 1.6;">Urgent void or turnaround? We move fast.</p>
+        </div>
+
+        <div data-reveal class="why-card" style="background: #FFFFFF; border: 1px solid #ECE8E1; border-radius: 16px; padding: 30px; box-shadow: 0 1px 2px rgba(31,33,35,0.04);">
+          <div style="width: 56px; height: 56px; display: flex; align-items: center; justify-content: center; background: #FDF3DD; clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%); margin-bottom: 20px; color: #C77F0A;">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 11h-4"/><path d="M20 9v4"/></svg>
+          </div>
+          <h3 style="font-size: 19px; font-weight: 800; color: #1F2123; letter-spacing: -0.01em; margin-bottom: 8px;">Dedicated Account Manager</h3>
+          <p style="font-size: 15.5px; color: #5A5F66; line-height: 1.6;">Every business client gets one point of contact who knows your portfolio.</p>
+        </div>
+
+        <div data-reveal class="why-card" style="background: #FFFFFF; border: 1px solid #ECE8E1; border-radius: 16px; padding: 30px; box-shadow: 0 1px 2px rgba(31,33,35,0.04);">
+          <div style="width: 56px; height: 56px; display: flex; align-items: center; justify-content: center; background: #FDF3DD; clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%); margin-bottom: 20px; color: #C77F0A;">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M14 3.13a4 4 0 0 1 0 7.75"/><path d="M19 8.5 21 10.5 23.5 7.5"/></svg>
+          </div>
+          <h3 style="font-size: 19px; font-weight: 800; color: #1F2123; letter-spacing: -0.01em; margin-bottom: 8px;">Uniformed, Vetted Staff</h3>
+          <p style="font-size: 15.5px; color: #5A5F66; line-height: 1.6;">Professional, reliable people who represent your brand well on site.</p>
+        </div>
+
+        <div data-reveal class="why-card" style="background: #FFFFFF; border: 1px solid #ECE8E1; border-radius: 16px; padding: 30px; box-shadow: 0 1px 2px rgba(31,33,35,0.04);">
+          <div style="width: 56px; height: 56px; display: flex; align-items: center; justify-content: center; background: #FDF3DD; clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%); margin-bottom: 20px; color: #C77F0A;">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2h6a2 2 0 0 1 2 2v1h1a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h1V4a2 2 0 0 1 2-2z"/><path d="M9 5h6"/><path d="m9 13 1.5 1.5L14 11"/></svg>
+          </div>
+          <h3 style="font-size: 19px; font-weight: 800; color: #1F2123; letter-spacing: -0.01em; margin-bottom: 8px;">Detailed Checklists</h3>
+          <p style="font-size: 15.5px; color: #5A5F66; line-height: 1.6;">Consistent, documented standards on every job.</p>
+        </div>
+
+        <div data-reveal class="why-card" style="background: #FFFFFF; border: 1px solid #ECE8E1; border-radius: 16px; padding: 30px; box-shadow: 0 1px 2px rgba(31,33,35,0.04);">
+          <div style="width: 56px; height: 56px; display: flex; align-items: center; justify-content: center; background: #FDF3DD; clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%); margin-bottom: 20px; color: #C77F0A;">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11a8 8 0 0 1 16 0v3.6a2 2 0 0 1-.6 1.42L18 17.5"/><path d="M4 11v3.6a2 2 0 0 0 .6 1.42L6 17.5"/><path d="M12 3v3"/><rect x="8" y="17" width="8" height="4" rx="1"/></svg>
+          </div>
+          <h3 style="font-size: 19px; font-weight: 800; color: #1F2123; letter-spacing: -0.01em; margin-bottom: 8px;">Health &amp; Safety Compliant</h3>
+          <p style="font-size: 15.5px; color: #5A5F66; line-height: 1.6;">Working practices that keep you covered.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section id="services" style="background: #FFFFFF; border-top: 1px solid #ECE8E1; padding: clamp(64px, 8vw, 104px) 24px;">
+    <div style="max-width: 1180px; margin: 0 auto;">
+      <div data-reveal style="text-align: center; max-width: 740px; margin: 0 auto 52px;">
+        <div style="display: inline-flex; align-items: center; gap: 8px; color: #16487F; font-weight: 800; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 16px;"><span style="width: 8px; height: 8px; background: #1E5FAE; transform: rotate(45deg);"></span>Our Services</div>
+        <h2 style="font-size: clamp(28px, 4vw, 44px); font-weight: 800; line-height: 1.08; letter-spacing: -0.025em; color: #1F2123; text-wrap: balance;">Cleaning Services Built for Property Professionals</h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px;">
+
+        <div data-reveal class="svc-card" style="background: #FBFAF7; border: 1px solid #ECE8E1; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 14px;">
+          <div style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: #EAF1FB; border-radius: 12px; color: #1E5FAE;"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 9h.01M15 9h.01M9 13h.01M15 13h.01M9 17h.01M15 17h.01"/></svg></div>
+          <div><h3 style="font-size: 17.5px; font-weight: 800; color: #1F2123; letter-spacing: -0.01em; margin-bottom: 6px;">Communal Area Cleaning</h3><p style="font-size: 14.5px; color: #5A5F66; line-height: 1.55;">Spotless shared spaces that protect tenant satisfaction.</p></div>
+        </div>
+
+        <div data-reveal class="svc-card" style="background: #FBFAF7; border: 1px solid #ECE8E1; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 14px;">
+          <div style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: #FDF3DD; border-radius: 12px; color: #C77F0A;"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="15.5" r="4.5"/><path d="m10.5 12.5 8-8"/><path d="m15 5 3 3"/><path d="m18 2 4 4-2.5 2.5L15.5 4.5z"/></svg></div>
+          <div><h3 style="font-size: 17.5px; font-weight: 800; color: #1F2123; letter-spacing: -0.01em; margin-bottom: 6px;">End-of-Tenancy Cleaning</h3><p style="font-size: 14.5px; color: #5A5F66; line-height: 1.55;">Fast void turnarounds, ready to re-let.</p></div>
+        </div>
+
+        <div data-reveal class="svc-card" style="background: #FBFAF7; border: 1px solid #ECE8E1; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 14px;">
+          <div style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: #EAF1FB; border-radius: 12px; color: #1E5FAE;"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v16"/><path d="M13 9h6a2 2 0 0 1 2 2v10"/><path d="M8 7h.01M8 11h.01M8 15h.01"/></svg></div>
+          <div><h3 style="font-size: 17.5px; font-weight: 800; color: #1F2123; letter-spacing: -0.01em; margin-bottom: 6px;">HMO Cleaning</h3><p style="font-size: 14.5px; color: #5A5F66; line-height: 1.55;">Reliable upkeep for shared and multi-occupancy properties.</p></div>
+        </div>
+
+        <div data-reveal class="svc-card" style="background: #FBFAF7; border: 1px solid #ECE8E1; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 14px;">
+          <div style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: #FDF3DD; border-radius: 12px; color: #C77F0A;"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 17v-3a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v3"/><path d="M2 17h20v3H2z"/><path d="M5 12V8a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4"/><path d="M9 9h6"/></svg></div>
+          <div><h3 style="font-size: 17.5px; font-weight: 800; color: #1F2123; letter-spacing: -0.01em; margin-bottom: 6px;">Serviced Accommodation Turnarounds</h3><p style="font-size: 14.5px; color: #5A5F66; line-height: 1.55;">Guest-ready cleans and linen changes between stays.</p></div>
+        </div>
+
+        <div data-reveal class="svc-card" style="background: #FBFAF7; border: 1px solid #ECE8E1; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 14px;">
+          <div style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: #EAF1FB; border-radius: 12px; color: #1E5FAE;"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21V5l8-2v18"/><path d="M11 7h8a2 2 0 0 1 2 2v12"/><path d="M3 21h18"/><path d="M15 11h.01M15 15h.01"/></svg></div>
+          <div><h3 style="font-size: 17.5px; font-weight: 800; color: #1F2123; letter-spacing: -0.01em; margin-bottom: 6px;">Property Management Cleaning Support</h3><p style="font-size: 14.5px; color: #5A5F66; line-height: 1.55;">A dependable partner across your whole portfolio.</p></div>
+        </div>
+
+        <div data-reveal class="svc-card" style="background: #FBFAF7; border: 1px solid #ECE8E1; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 14px;">
+          <div style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: #FDF3DD; border-radius: 12px; color: #C77F0A;"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3M12 18v3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M3 12h3M18 12h3M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="3"/></svg></div>
+          <div><h3 style="font-size: 17.5px; font-weight: 800; color: #1F2123; letter-spacing: -0.01em; margin-bottom: 6px;">Deep Cleaning Services</h3><p style="font-size: 14.5px; color: #5A5F66; line-height: 1.55;">Restorative cleans for tired or neglected properties.</p></div>
+        </div>
+
+        <div data-reveal class="svc-card" style="background: #FBFAF7; border: 1px solid #ECE8E1; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 14px;">
+          <div style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: #EAF1FB; border-radius: 12px; color: #1E5FAE;"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v18H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M14 8h4a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-4"/><path d="M10.5 12h.01"/></svg></div>
+          <div><h3 style="font-size: 17.5px; font-weight: 800; color: #1F2123; letter-spacing: -0.01em; margin-bottom: 6px;">Apartment Check-Out Cleaning</h3><p style="font-size: 14.5px; color: #5A5F66; line-height: 1.55;">Thorough, checklist-driven move-out cleans.</p></div>
+        </div>
+
+        <div data-reveal class="svc-card" style="background: #FBFAF7; border: 1px solid #ECE8E1; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 14px;">
+          <div style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: #FDF3DD; border-radius: 12px; color: #C77F0A;"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></div>
+          <div><h3 style="font-size: 17.5px; font-weight: 800; color: #1F2123; letter-spacing: -0.01em; margin-bottom: 6px;">House Cleaning (1–6+ Bedrooms)</h3><p style="font-size: 14.5px; color: #5A5F66; line-height: 1.55;">For landlords and private clients alike.</p></div>
+        </div>
+
+      </div>
+
+      <p data-reveal style="text-align: center; color: #5A5F66; font-size: 15.5px; margin-top: 30px;">Also available: <strong style="color: #1F2123; font-weight: 700;">Oven Cleaning</strong> · <strong style="color: #1F2123; font-weight: 700;">Window Cleaning</strong> · <strong style="color: #1F2123; font-weight: 700;">Laundry &amp; Linen Change</strong> · <strong style="color: #1F2123; font-weight: 700;">Emergency &amp; Maintenance Cleaning</strong>.</p>
+
+      <!-- CTA band -->
+      <div data-reveal style="margin-top: 44px; position: relative; overflow: hidden; background: #1F2123; border-radius: 22px; padding: clamp(34px, 5vw, 52px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px;">
+        <div style="position: absolute; inset: 0; background-image: url('assets/hex-light.svg'); opacity: 0.06; z-index: 0;"></div>
+        <div style="position: relative; z-index: 1;">
+          <h3 style="color: #FFFFFF; font-size: clamp(22px, 2.6vw, 28px); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 6px;">Need a property cleaned this week?</h3>
+          <p style="color: rgba(255,255,255,0.7); font-size: 16px;">Same-day response · Speak to a real person, not a call centre.</p>
+        </div>
+        <div style="position: relative; z-index: 1; display: flex; flex-wrap: wrap; gap: 12px;">
+          <a class="btn-gold" href="tel:+447448946475" style="display: inline-flex; align-items: center; gap: 10px; padding: 15px 24px; background: #F4A81E; color: #1F2123; font-weight: 800; font-size: 16px; border-radius: 13px; text-decoration: none;"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call 07448 946475</a>
+          <a class="btn-wa" href="https://wa.me/447448946475" style="display: inline-flex; align-items: center; gap: 10px; padding: 15px 24px; background: #25D366; color: #FFFFFF; font-weight: 800; font-size: 16px; border-radius: 13px; text-decoration: none;"><svg viewBox="0 0 32 32" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M16 .4C7.4.4.5 7.3.5 15.9c0 2.8.7 5.5 2.1 7.9L.4 31.6l8-2.1c2.3 1.3 4.9 1.9 7.6 1.9 8.6 0 15.5-6.9 15.5-15.5S24.6.4 16 .4zm0 28.3c-2.4 0-4.7-.6-6.7-1.8l-.5-.3-4.8 1.3 1.3-4.6-.3-.5c-1.3-2.1-2-4.5-2-7 0-7.2 5.9-13.1 13.1-13.1 3.5 0 6.8 1.4 9.3 3.8 2.5 2.5 3.8 5.8 3.8 9.3 0 7.2-5.9 13.2-13.2 13.2zm7.2-9.8c-.4-.2-2.3-1.1-2.7-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.2 1.5-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.3-2.1-2.6-.2-.4 0-.6.2-.7.2-.2.4-.4.5-.6.2-.2.2-.4.4-.6.1-.2.1-.5 0-.7-.1-.2-.9-2.2-1.3-3-.3-.8-.7-.7-.9-.7h-.8c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.2s1.4 3.7 1.5 3.9c.2.2 2.7 4.2 6.6 5.9.9.4 1.6.6 2.2.8.9.3 1.7.2 2.4.1.7-.1 2.3-.9 2.6-1.8.3-.9.3-1.7.2-1.8-.1-.2-.3-.3-.7-.4z"/></svg>WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HOW IT WORKS ===================== -->
+  <section style="padding: clamp(64px, 8vw, 104px) 24px;">
+    <div style="max-width: 1180px; margin: 0 auto;">
+      <div data-reveal style="text-align: center; max-width: 700px; margin: 0 auto 52px;">
+        <div style="display: inline-flex; align-items: center; gap: 8px; color: #C77F0A; font-weight: 800; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 16px;"><span style="width: 8px; height: 8px; background: #F4A81E; transform: rotate(45deg);"></span>How It Works</div>
+        <h2 style="font-size: clamp(28px, 4vw, 44px); font-weight: 800; line-height: 1.08; letter-spacing: -0.025em; color: #1F2123; text-wrap: balance;">Getting Started Is Simple</h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 22px;">
+        <div data-reveal style="background: #FFFFFF; border: 1px solid #ECE8E1; border-radius: 18px; padding: 34px 30px;">
+          <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 18px;">
+            <div style="position: relative; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; background: #1E5FAE; clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%); color: #FFFFFF;"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <span style="font-size: 44px; font-weight: 800; color: #ECE8E1; line-height: 1;">01</span>
+          </div>
+          <h3 style="font-size: 20px; font-weight: 800; color: #1F2123; letter-spacing: -0.01em; margin-bottom: 8px;">Get in Touch</h3>
+          <p style="font-size: 15.5px; color: #5A5F66; line-height: 1.6;">Call or WhatsApp us. We respond the same day.</p>
+        </div>
+
+        <div data-reveal style="background: #FFFFFF; border: 1px solid #ECE8E1; border-radius: 18px; padding: 34px 30px;">
+          <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 18px;">
+            <div style="position: relative; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; background: #F4A81E; clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%); color: #1F2123;"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2h6a2 2 0 0 1 2 2v1h1a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h1V4a2 2 0 0 1 2-2z"/><path d="M9 5h6"/><path d="m9 13 1.5 1.5L14 11"/></svg></div>
+            <span style="font-size: 44px; font-weight: 800; color: #ECE8E1; line-height: 1;">02</span>
+          </div>
+          <h3 style="font-size: 20px; font-weight: 800; color: #1F2123; letter-spacing: -0.01em; margin-bottom: 8px;">We Assess &amp; Quote</h3>
+          <p style="font-size: 15.5px; color: #5A5F66; line-height: 1.6;">We understand your properties and give you a clear plan.</p>
+        </div>
+
+        <div data-reveal style="background: #FFFFFF; border: 1px solid #ECE8E1; border-radius: 18px; padding: 34px 30px;">
+          <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 18px;">
+            <div style="position: relative; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; background: #1E5FAE; clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%); color: #FFFFFF;"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg></div>
+            <span style="font-size: 44px; font-weight: 800; color: #ECE8E1; line-height: 1;">03</span>
+          </div>
+          <h3 style="font-size: 20px; font-weight: 800; color: #1F2123; letter-spacing: -0.01em; margin-bottom: 8px;">Reliable Ongoing Service</h3>
+          <p style="font-size: 15.5px; color: #5A5F66; line-height: 1.6;">Your dedicated account manager keeps everything running smoothly.</p>
+        </div>
+      </div>
+
+      <div data-reveal style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 40px;">
+        <a class="btn-gold" href="tel:+447448946475" style="display: inline-flex; align-items: center; gap: 10px; padding: 15px 26px; background: #F4A81E; color: #1F2123; font-weight: 800; font-size: 16px; border-radius: 13px; text-decoration: none; box-shadow: 0 8px 20px rgba(244,168,30,0.3);"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call 07448 946475</a>
+        <a class="btn-wa-outline" href="https://wa.me/447448946475" style="display: inline-flex; align-items: center; gap: 10px; padding: 15px 26px; background: #FFFFFF; color: #1F8A45; border: 1.5px solid #25D366; font-weight: 800; font-size: 16px; border-radius: 13px; text-decoration: none;"><svg viewBox="0 0 32 32" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M16 .4C7.4.4.5 7.3.5 15.9c0 2.8.7 5.5 2.1 7.9L.4 31.6l8-2.1c2.3 1.3 4.9 1.9 7.6 1.9 8.6 0 15.5-6.9 15.5-15.5S24.6.4 16 .4zm0 28.3c-2.4 0-4.7-.6-6.7-1.8l-.5-.3-4.8 1.3 1.3-4.6-.3-.5c-1.3-2.1-2-4.5-2-7 0-7.2 5.9-13.1 13.1-13.1 3.5 0 6.8 1.4 9.3 3.8 2.5 2.5 3.8 5.8 3.8 9.3 0 7.2-5.9 13.2-13.2 13.2zm7.2-9.8c-.4-.2-2.3-1.1-2.7-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.2 1.5-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.3-2.1-2.6-.2-.4 0-.6.2-.7.2-.2.4-.4.5-.6.2-.2.2-.4.4-.6.1-.2.1-.5 0-.7-.1-.2-.9-2.2-1.3-3-.3-.8-.7-.7-.9-.7h-.8c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.2s1.4 3.7 1.5 3.9c.2.2 2.7 4.2 6.6 5.9.9.4 1.6.6 2.2.8.9.3 1.7.2 2.4.1.7-.1 2.3-.9 2.6-1.8.3-.9.3-1.7.2-1.8-.1-.2-.3-.3-.7-.4z"/></svg>Message us on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOR PROPERTY MANAGERS ===================== -->
+  <section id="property-managers" style="background: #FFFFFF; border-top: 1px solid #ECE8E1; padding: clamp(64px, 8vw, 104px) 24px;">
+    <div style="max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: clamp(36px, 5vw, 64px); align-items: center;">
+      <div data-reveal>
+        <div style="display: inline-flex; align-items: center; gap: 8px; color: #16487F; font-weight: 800; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 16px;"><span style="width: 8px; height: 8px; background: #1E5FAE; transform: rotate(45deg);"></span>For Property Managers</div>
+        <h2 style="font-size: clamp(27px, 3.6vw, 42px); font-weight: 800; line-height: 1.08; letter-spacing: -0.025em; color: #1F2123; text-wrap: balance; margin-bottom: 20px;">Built for Portfolios, Not Just Properties</h2>
+        <p style="font-size: 16.5px; color: #5A5F66; line-height: 1.65; margin-bottom: 26px;">We understand that property managers, landlords, and housing providers need a cleaning partner they can rely on without supervision. Bright Bee delivers consistent standards across every property — voids, turnarounds, communal areas, and HMOs — backed by same-day response, a dedicated account manager, and full insurance. We're here to build long-term partnerships, not one-off jobs.</p>
+        <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 30px;">
+          <div style="display: flex; align-items: center; gap: 12px;"><span style="flex-shrink: 0; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; background: #FDF3DD; clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%); color: #C77F0A;"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-11"/></svg></span><span style="font-size: 16px; font-weight: 600; color: #1F2123;">Same-day response</span></div>
+          <div style="display: flex; align-items: center; gap: 12px;"><span style="flex-shrink: 0; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; background: #FDF3DD; clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%); color: #C77F0A;"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-11"/></svg></span><span style="font-size: 16px; font-weight: 600; color: #1F2123;">Dedicated account manager</span></div>
+          <div style="display: flex; align-items: center; gap: 12px;"><span style="flex-shrink: 0; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; background: #FDF3DD; clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%); color: #C77F0A;"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-11"/></svg></span><span style="font-size: 16px; font-weight: 600; color: #1F2123;">Volume &amp; recurring scheduling</span></div>
+          <div style="display: flex; align-items: center; gap: 12px;"><span style="flex-shrink: 0; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; background: #FDF3DD; clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%); color: #C77F0A;"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-11"/></svg></span><span style="font-size: 16px; font-weight: 600; color: #1F2123;">Detailed reporting via checklists</span></div>
+          <div style="display: flex; align-items: center; gap: 12px;"><span style="flex-shrink: 0; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; background: #FDF3DD; clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%); color: #C77F0A;"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-11"/></svg></span><span style="font-size: 16px; font-weight: 600; color: #1F2123;">Full Public Liability cover</span></div>
+        </div>
+        <a class="btn-navy" href="tel:+447448946475" style="display: inline-flex; align-items: center; gap: 11px; padding: 16px 28px; background: #1E5FAE; color: #FFFFFF; font-weight: 800; font-size: 16px; border-radius: 13px; text-decoration: none; box-shadow: 0 8px 22px rgba(30,95,174,0.3);"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Discuss a contract — Call or WhatsApp</a>
+      </div>
+      <div data-reveal>
+        <div style="position: relative;">
+          <img src="assets/property-managers.jpg" alt="A spotless, freshly cleaned communal hallway in a North West residential building" loading="lazy" decoding="async" style="display: block; width: 100%; aspect-ratio: 4/3.4; object-fit: cover; border-radius: 20px; box-shadow: 0 24px 60px rgba(31,33,35,0.14);">
+          <div style="position: absolute; bottom: -18px; left: -18px; background: #FFFFFF; border: 1px solid #ECE8E1; border-radius: 16px; padding: 16px 20px; box-shadow: 0 16px 40px rgba(31,33,35,0.12); display: flex; align-items: center; gap: 12px;">
+            <span style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; background: #F4A81E; clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%); color: #1F2123;"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>
+            <div><div style="font-size: 13px; color: #5A5F66; font-weight: 600;">Fully insured</div><div style="font-size: 15px; color: #1F2123; font-weight: 800;">Public Liability cover</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== QUALITY & STANDARDS ===================== -->
+  <section style="padding: clamp(64px, 8vw, 104px) 24px;">
+    <div style="max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(36px, 5vw, 60px); align-items: center;">
+      <div data-reveal>
+        <div style="display: inline-flex; align-items: center; gap: 8px; color: #C77F0A; font-weight: 800; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 16px;"><span style="width: 8px; height: 8px; background: #F4A81E; transform: rotate(45deg);"></span>Quality &amp; Standards</div>
+        <h2 style="font-size: clamp(27px, 3.6vw, 42px); font-weight: 800; line-height: 1.08; letter-spacing: -0.025em; color: #1F2123; text-wrap: balance; margin-bottom: 18px;">Standards We Don't Compromise On</h2>
+        <p style="font-size: 16.5px; color: #5A5F66; line-height: 1.65;">Consistency is what separates a cleaning partner from a cleaning cost. Every Bright Bee job follows the same documented standards — so you get the same result on the first property and the fiftieth.</p>
+      </div>
+      <div data-reveal style="background: #FFFFFF; border: 1px solid #ECE8E1; border-radius: 20px; padding: clamp(28px, 4vw, 40px); box-shadow: 0 1px 2px rgba(31,33,35,0.04);">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px 22px;">
+          <div style="display: flex; align-items: flex-start; gap: 11px;"><span style="flex-shrink: 0; margin-top: 2px; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; background: #EAF1FB; clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%); color: #1E5FAE;"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-11"/></svg></span><span style="font-size: 15.5px; font-weight: 600; color: #1F2123; line-height: 1.45;">Uniformed cleaning staff</span></div>
+          <div style="display: flex; align-items: flex-start; gap: 11px;"><span style="flex-shrink: 0; margin-top: 2px; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; background: #EAF1FB; clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%); color: #1E5FAE;"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-11"/></svg></span><span style="font-size: 15.5px; font-weight: 600; color: #1F2123; line-height: 1.45;">Reliable attendance &amp; timekeeping</span></div>
+          <div style="display: flex; align-items: flex-start; gap: 11px;"><span style="flex-shrink: 0; margin-top: 2px; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; background: #EAF1FB; clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%); color: #1E5FAE;"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-11"/></svg></span><span style="font-size: 15.5px; font-weight: 600; color: #1F2123; line-height: 1.45;">Flexible scheduling</span></div>
+          <div style="display: flex; align-items: flex-start; gap: 11px;"><span style="flex-shrink: 0; margin-top: 2px; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; background: #EAF1FB; clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%); color: #1E5FAE;"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-11"/></svg></span><span style="font-size: 15.5px; font-weight: 600; color: #1F2123; line-height: 1.45;">Detailed cleaning checklists</span></div>
+          <div style="display: flex; align-items: flex-start; gap: 11px;"><span style="flex-shrink: 0; margin-top: 2px; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; background: #EAF1FB; clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%); color: #1E5FAE;"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-11"/></svg></span><span style="font-size: 15.5px; font-weight: 600; color: #1F2123; line-height: 1.45;">Health &amp; Safety compliant practices</span></div>
+          <div style="display: flex; align-items: flex-start; gap: 11px;"><span style="flex-shrink: 0; margin-top: 2px; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; background: #EAF1FB; clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%); color: #1E5FAE;"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-11"/></svg></span><span style="font-size: 15.5px; font-weight: 600; color: #1F2123; line-height: 1.45;">Prompt, professional issue resolution</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== AREAS WE COVER ===================== -->
+  <section id="areas" style="position: relative; overflow: hidden; padding: clamp(64px, 8vw, 104px) 24px;">
+    <div style="position: absolute; inset: 0; background-image: url('assets/hex-gold.svg'); opacity: 0.07; z-index: 0;"></div>
+    <div style="position: relative; z-index: 1; max-width: 1180px; margin: 0 auto;">
+      <div data-reveal style="text-align: center; max-width: 700px; margin: 0 auto 44px;">
+        <div style="display: inline-flex; align-items: center; gap: 8px; color: #16487F; font-weight: 800; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 16px;"><span style="width: 8px; height: 8px; background: #1E5FAE; transform: rotate(45deg);"></span>Areas We Cover</div>
+        <h2 style="font-size: clamp(28px, 4vw, 44px); font-weight: 800; line-height: 1.08; letter-spacing: -0.025em; color: #1F2123; text-wrap: balance; margin-bottom: 14px;">Serving Manchester &amp; the North West</h2>
+        <p style="font-size: clamp(16px, 1.7vw, 18px); color: #5A5F66; line-height: 1.6;">Fast, reliable cleaning coverage across Greater Manchester and the surrounding region.</p>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; max-width: 920px; margin: 0 auto;">
+        <span style="display: inline-flex; align-items: center; gap: 9px; padding: 12px 20px; background: #FFFFFF; border: 1px solid #ECE8E1; border-radius: 999px; font-size: 15.5px; font-weight: 700; color: #1F2123; box-shadow: 0 2px 8px rgba(31,33,35,0.04);"><span style="width: 7px; height: 7px; background: #F4A81E; transform: rotate(45deg);"></span>Manchester</span>
+        <span style="display: inline-flex; align-items: center; gap: 9px; padding: 12px 20px; background: #FFFFFF; border: 1px solid #ECE8E1; border-radius: 999px; font-size: 15.5px; font-weight: 700; color: #1F2123; box-shadow: 0 2px 8px rgba(31,33,35,0.04);"><span style="width: 7px; height: 7px; background: #1E5FAE; transform: rotate(45deg);"></span>Salford</span>
+        <span style="display: inline-flex; align-items: center; gap: 9px; padding: 12px 20px; background: #FFFFFF; border: 1px solid #ECE8E1; border-radius: 999px; font-size: 15.5px; font-weight: 700; color: #1F2123; box-shadow: 0 2px 8px rgba(31,33,35,0.04);"><span style="width: 7px; height: 7px; background: #F4A81E; transform: rotate(45deg);"></span>Stockport</span>
+        <span style="display: inline-flex; align-items: center; gap: 9px; padding: 12px 20px; background: #FFFFFF; border: 1px solid #ECE8E1; border-radius: 999px; font-size: 15.5px; font-weight: 700; color: #1F2123; box-shadow: 0 2px 8px rgba(31,33,35,0.04);"><span style="width: 7px; height: 7px; background: #1E5FAE; transform: rotate(45deg);"></span>Trafford</span>
+        <span style="display: inline-flex; align-items: center; gap: 9px; padding: 12px 20px; background: #FFFFFF; border: 1px solid #ECE8E1; border-radius: 999px; font-size: 15.5px; font-weight: 700; color: #1F2123; box-shadow: 0 2px 8px rgba(31,33,35,0.04);"><span style="width: 7px; height: 7px; background: #F4A81E; transform: rotate(45deg);"></span>Bolton</span>
+        <span style="display: inline-flex; align-items: center; gap: 9px; padding: 12px 20px; background: #FFFFFF; border: 1px solid #ECE8E1; border-radius: 999px; font-size: 15.5px; font-weight: 700; color: #1F2123; box-shadow: 0 2px 8px rgba(31,33,35,0.04);"><span style="width: 7px; height: 7px; background: #1E5FAE; transform: rotate(45deg);"></span>Bury</span>
+        <span style="display: inline-flex; align-items: center; gap: 9px; padding: 12px 20px; background: #FFFFFF; border: 1px solid #ECE8E1; border-radius: 999px; font-size: 15.5px; font-weight: 700; color: #1F2123; box-shadow: 0 2px 8px rgba(31,33,35,0.04);"><span style="width: 7px; height: 7px; background: #F4A81E; transform: rotate(45deg);"></span>Oldham</span>
+        <span style="display: inline-flex; align-items: center; gap: 9px; padding: 12px 20px; background: #FFFFFF; border: 1px solid #ECE8E1; border-radius: 999px; font-size: 15.5px; font-weight: 700; color: #1F2123; box-shadow: 0 2px 8px rgba(31,33,35,0.04);"><span style="width: 7px; height: 7px; background: #1E5FAE; transform: rotate(45deg);"></span>Rochdale</span>
+        <span style="display: inline-flex; align-items: center; gap: 9px; padding: 12px 20px; background: #FFFFFF; border: 1px solid #ECE8E1; border-radius: 999px; font-size: 15.5px; font-weight: 700; color: #1F2123; box-shadow: 0 2px 8px rgba(31,33,35,0.04);"><span style="width: 7px; height: 7px; background: #F4A81E; transform: rotate(45deg);"></span>Wigan</span>
+        <span style="display: inline-flex; align-items: center; gap: 9px; padding: 12px 20px; background: #FFFFFF; border: 1px solid #ECE8E1; border-radius: 999px; font-size: 15.5px; font-weight: 700; color: #1F2123; box-shadow: 0 2px 8px rgba(31,33,35,0.04);"><span style="width: 7px; height: 7px; background: #1E5FAE; transform: rotate(45deg);"></span>Tameside</span>
+        <span style="display: inline-flex; align-items: center; gap: 9px; padding: 12px 20px; background: #1F2123; border-radius: 999px; font-size: 15.5px; font-weight: 700; color: #FFFFFF;">+ surrounding North West areas</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FINAL CTA ===================== -->
+  <section id="contact" style="position: relative; overflow: hidden; background: #1F2123; padding: clamp(72px, 9vw, 120px) 24px;">
+    <div style="position: absolute; inset: 0; background-image: url('assets/hex-light.svg'); opacity: 0.05; z-index: 0;"></div>
+    <div style="position: absolute; top: -120px; right: -80px; width: 360px; height: 360px; background: radial-gradient(circle, rgba(244,168,30,0.22) 0%, rgba(244,168,30,0) 70%); z-index: 0;"></div>
+    <div data-reveal style="position: relative; z-index: 1; max-width: 760px; margin: 0 auto; text-align: center;">
+      <h2 style="color: #FFFFFF; font-size: clamp(30px, 4.6vw, 52px); font-weight: 800; line-height: 1.06; letter-spacing: -0.025em; text-wrap: balance; margin-bottom: 18px;">Let's Keep Your Properties <span style="color: #F4A81E;">Spotless</span></h2>
+      <p style="color: rgba(255,255,255,0.74); font-size: clamp(16px, 1.9vw, 20px); line-height: 1.6; margin-bottom: 38px;">Same-day response. A dedicated account manager. Cleaning you never have to chase.</p>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-bottom: 22px;">
+        <a class="btn-gold" href="tel:+447448946475" style="display: inline-flex; align-items: center; gap: 11px; padding: 18px 30px; background: #F4A81E; color: #1F2123; font-weight: 800; font-size: 18px; border-radius: 14px; text-decoration: none; box-shadow: 0 12px 30px rgba(244,168,30,0.4);"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call 07448 946475</a>
+        <a class="btn-wa" href="https://wa.me/447448946475" style="display: inline-flex; align-items: center; gap: 11px; padding: 18px 30px; background: #25D366; color: #FFFFFF; font-weight: 800; font-size: 18px; border-radius: 14px; text-decoration: none; box-shadow: 0 12px 30px rgba(37,211,102,0.32);"><svg viewBox="0 0 32 32" width="21" height="21" fill="currentColor" aria-hidden="true"><path d="M16 .4C7.4.4.5 7.3.5 15.9c0 2.8.7 5.5 2.1 7.9L.4 31.6l8-2.1c2.3 1.3 4.9 1.9 7.6 1.9 8.6 0 15.5-6.9 15.5-15.5S24.6.4 16 .4zm0 28.3c-2.4 0-4.7-.6-6.7-1.8l-.5-.3-4.8 1.3 1.3-4.6-.3-.5c-1.3-2.1-2-4.5-2-7 0-7.2 5.9-13.1 13.1-13.1 3.5 0 6.8 1.4 9.3 3.8 2.5 2.5 3.8 5.8 3.8 9.3 0 7.2-5.9 13.2-13.2 13.2zm7.2-9.8c-.4-.2-2.3-1.1-2.7-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.2 1.5-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.3-2.1-2.6-.2-.4 0-.6.2-.7.2-.2.4-.4.5-.6.2-.2.2-.4.4-.6.1-.2.1-.5 0-.7-.1-.2-.9-2.2-1.3-3-.3-.8-.7-.7-.9-.7h-.8c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.2s1.4 3.7 1.5 3.9c.2.2 2.7 4.2 6.6 5.9.9.4 1.6.6 2.2.8.9.3 1.7.2 2.4.1.7-.1 2.3-.9 2.6-1.8.3-.9.3-1.7.2-1.8-.1-.2-.3-.3-.7-.4z"/></svg>Message on WhatsApp</a>
+      </div>
+      <p style="color: rgba(255,255,255,0.6); font-size: 15px;">Or email <a href="mailto:info@brightbeecleaningltd.co.uk" style="color: #F4A81E; text-decoration: none; font-weight: 700;">info@brightbeecleaningltd.co.uk</a></p>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer style="background: #17191B; color: rgba(255,255,255,0.7); padding: clamp(48px, 6vw, 72px) 24px 32px;">
+    <div style="max-width: 1180px; margin: 0 auto;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 36px; padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.1);">
+        <div style="max-width: 320px;">
+          <div style="display: flex; align-items: baseline; gap: 2px; margin-bottom: 14px;">
+            <span style="font-size: 26px; font-weight: 800; color: #1E5FAE; letter-spacing: -0.02em;">Bright</span>
+            <span style="font-size: 26px; font-weight: 800; color: #F4A81E; letter-spacing: -0.02em;">Bee</span>
+            <span style="font-size: 12px; font-weight: 700; color: rgba(255,255,255,0.55); letter-spacing: 0.28em; margin-left: 7px;">CLEANING</span>
+          </div>
+          <p style="font-size: 14.5px; line-height: 1.6;">The dependable cleaning partner for property managers, landlords, and housing providers across the North West.</p>
+        </div>
+        <div>
+          <h4 style="color: #FFFFFF; font-size: 13px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 16px;">Services</h4>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <a href="#services" style="text-decoration: none; color: rgba(255,255,255,0.7); font-size: 14.5px;">Communal Area Cleaning</a>
+            <a href="#services" style="text-decoration: none; color: rgba(255,255,255,0.7); font-size: 14.5px;">End-of-Tenancy Cleaning</a>
+            <a href="#services" style="text-decoration: none; color: rgba(255,255,255,0.7); font-size: 14.5px;">HMO Cleaning</a>
+            <a href="#services" style="text-decoration: none; color: rgba(255,255,255,0.7); font-size: 14.5px;">Serviced Accommodation</a>
+            <a href="#services" style="text-decoration: none; color: rgba(255,255,255,0.7); font-size: 14.5px;">Deep Cleaning</a>
+          </div>
+        </div>
+        <div>
+          <h4 style="color: #FFFFFF; font-size: 13px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 16px;">Areas</h4>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <a href="#areas" style="text-decoration: none; color: rgba(255,255,255,0.7); font-size: 14.5px;">Manchester</a>
+            <a href="#areas" style="text-decoration: none; color: rgba(255,255,255,0.7); font-size: 14.5px;">Salford &amp; Trafford</a>
+            <a href="#areas" style="text-decoration: none; color: rgba(255,255,255,0.7); font-size: 14.5px;">Stockport &amp; Tameside</a>
+            <a href="#areas" style="text-decoration: none; color: rgba(255,255,255,0.7); font-size: 14.5px;">Bolton, Bury &amp; Wigan</a>
+            <a href="#areas" style="text-decoration: none; color: rgba(255,255,255,0.7); font-size: 14.5px;">Oldham &amp; Rochdale</a>
+          </div>
+        </div>
+        <div>
+          <h4 style="color: #FFFFFF; font-size: 13px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 16px;">Contact</h4>
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <a href="tel:+447448946475" style="display: inline-flex; align-items: center; gap: 9px; text-decoration: none; color: #FFFFFF; font-size: 16px; font-weight: 800;"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#F4A81E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>07448 946475</a>
+            <a href="https://wa.me/447448946475" style="display: inline-flex; align-items: center; gap: 9px; text-decoration: none; color: rgba(255,255,255,0.7); font-size: 14.5px;"><svg viewBox="0 0 32 32" width="16" height="16" fill="#25D366" aria-hidden="true"><path d="M16 .4C7.4.4.5 7.3.5 15.9c0 2.8.7 5.5 2.1 7.9L.4 31.6l8-2.1c2.3 1.3 4.9 1.9 7.6 1.9 8.6 0 15.5-6.9 15.5-15.5S24.6.4 16 .4z"/></svg>WhatsApp us</a>
+            <a href="mailto:info@brightbeecleaningltd.co.uk" style="text-decoration: none; color: rgba(255,255,255,0.7); font-size: 14.5px; word-break: break-all;">info@brightbeecleaningltd.co.uk</a>
+          </div>
+        </div>
+      </div>
+      <div style="padding-top: 26px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px;">
+        <p style="font-size: 13.5px; color: rgba(255,255,255,0.55);">Bright Bee Cleaning — Fully insured (Public Liability). Serving Manchester &amp; the North West.</p>
+        <p style="font-size: 13.5px; color: rgba(255,255,255,0.45);">© 2026 Bright Bee Cleaning Ltd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== FLOATING WHATSAPP ===================== -->
+  <a class="fab-wa" href="https://wa.me/447448946475" aria-label="Message us on WhatsApp" style="position: fixed; bottom: 22px; right: 22px; z-index: 200; width: 60px; height: 60px; border-radius: 50%; background: #25D366; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 24px rgba(37,211,102,0.45); animation: bb-pulse 2.6s infinite;">
+    <svg viewBox="0 0 32 32" width="32" height="32" fill="#FFFFFF" aria-hidden="true"><path d="M16 .4C7.4.4.5 7.3.5 15.9c0 2.8.7 5.5 2.1 7.9L.4 31.6l8-2.1c2.3 1.3 4.9 1.9 7.6 1.9 8.6 0 15.5-6.9 15.5-15.5S24.6.4 16 .4zm0 28.3c-2.4 0-4.7-.6-6.7-1.8l-.5-.3-4.8 1.3 1.3-4.6-.3-.5c-1.3-2.1-2-4.5-2-7 0-7.2 5.9-13.1 13.1-13.1 3.5 0 6.8 1.4 9.3 3.8 2.5 2.5 3.8 5.8 3.8 9.3 0 7.2-5.9 13.2-13.2 13.2zm7.2-9.8c-.4-.2-2.3-1.1-2.7-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.2 1.5-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.3-2.1-2.6-.2-.4 0-.6.2-.7.2-.2.4-.4.5-.6.2-.2.2-.4.4-.6.1-.2.1-.5 0-.7-.1-.2-.9-2.2-1.3-3-.3-.8-.7-.7-.9-.7h-.8c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.2s1.4 3.7 1.5 3.9c.2.2 2.7 4.2 6.6 5.9.9.4 1.6.6 2.2.8.9.3 1.7.2 2.4.1.7-.1 2.3-.9 2.6-1.8.3-.9.3-1.7.2-1.8-.1-.2-.3-.3-.7-.4z"/></svg>
+  </a>
+
+</div>
+
+<script>
+  (function () {
+    // Header shrink on scroll
+    var header = document.getElementById('siteHeader');
+    function onScroll() {
+      if (!header) return;
+      if (window.scrollY > 24) {
+        header.style.padding = '10px 24px';
+        header.style.boxShadow = '0 6px 24px rgba(31,33,35,0.1)';
+        header.style.background = 'rgba(251,250,247,0.96)';
+      } else {
+        header.style.padding = '18px 24px';
+        header.style.boxShadow = '0 1px 0 rgba(31,33,35,0.06)';
+        header.style.background = 'rgba(251,250,247,0.86)';
+      }
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // Mobile menu toggle
+    var toggle = document.getElementById('menuToggle');
+    var menu = document.getElementById('mobileMenu');
+    function openMenu() { menu.hidden = false; menu.style.display = 'flex'; toggle.setAttribute('aria-expanded', 'true'); toggle.setAttribute('aria-label', 'Close menu'); }
+    function closeMenu() { menu.hidden = true; menu.style.display = 'none'; toggle.setAttribute('aria-expanded', 'false'); toggle.setAttribute('aria-label', 'Open menu'); }
+    if (toggle && menu) {
+      toggle.addEventListener('click', function () {
+        if (menu.hidden) { openMenu(); } else { closeMenu(); }
+      });
+      menu.querySelectorAll('[data-close-menu]').forEach(function (a) {
+        a.addEventListener('click', closeMenu);
+      });
+    }
+
+    // Reveal-on-scroll
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('is-visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -10% 0px' });
+    document.querySelectorAll('[data-reveal]').forEach(function (el) { io.observe(el); });
+  })();
+</script>
+</body>
+</html>
